@@ -4,7 +4,7 @@
 
 [Beacon](https://walletbeacon.io) is the implementation of the wallet interaction
 standard [tzip-10](https://gitlab.com/tzip/tzip/blob/master/proposals/tzip-10/tzip-10.md) which describes the
-connnection of a dApp with a wallet.
+connection of a dApp with a wallet.
 
 ## Supported Platforms
 
@@ -44,7 +44,7 @@ var options = new BeaconOptions
     IconUrl = "https://services.tzkt.io/v1/avatars/KT1TxqZ8QtKvLu3V3JH7Gx58n7Co8pgtpQU5",
     KnownRelayServers = Constants.KnownRelayServers,
 
-    // for some operating systems compability reasons we should use Mode=Exclusive for LiteDB.
+    // for some operating systems compatibility reasons we should use Mode=Exclusive for LiteDB.
     DatabaseConnectionString = RuntimeInformation.IsOSPlatform(OSPlatform.Windows)
         ? $"Filename={path}; Connection=Shared;"
         : $"Filename={path}; Mode=Exclusive;"
